@@ -10,7 +10,13 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        headerShown: false,
+        // headerShown: false,
+        headerStyle: {
+          backgroundColor: theme.background,
+        },
+        headerTitleStyle: {
+          color: theme.text,
+        },
         tabBarActiveTintColor: theme.tint,
         tabBarStyle: {
           backgroundColor: theme.background,
@@ -19,12 +25,12 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="listings"
         options={{
-          title: "Dashboard",
+          title: "Listings",
           tabBarIcon: () => (
             <Ionicons
-              name="home-sharp"
+              name="list-sharp"
               size={32}
               color={theme.icon}
             />
@@ -32,12 +38,12 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="listings"
+        name="index"
         options={{
-          title: "Listings",
+          title: "Dashboard",
           tabBarIcon: () => (
             <Ionicons
-              name="list-sharp"
+              name="home-sharp"
               size={32}
               color={theme.icon}
             />

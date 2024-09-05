@@ -1,8 +1,8 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { Colors } from "@/constants/Colors";
 
-export default function ThemedWrapper(props: any) {
+export default function ThemedView(props: any) {
   const colorScheme = useColorScheme();
   const theme = Colors[colorScheme ?? "light"];
 

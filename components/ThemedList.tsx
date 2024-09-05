@@ -43,6 +43,7 @@ export default function ThemedList(props: any) {
       }}
       ItemSeparatorComponent={() => <View style={{ height: 16 }} />}
       estimatedItemSize={300}
+      contentContainerStyle={{ paddingVertical: 32, paddingHorizontal: 16 }}
     />
   );
 }
